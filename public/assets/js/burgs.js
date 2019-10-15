@@ -27,7 +27,7 @@ console.log(newDevoured)
 
     var newBurg = {
       name: $("#bg").val().trim(),
-      devoured: $("[name=devoured]:checked").val().trim()
+      devoured: $("[name=devoured]:checked").val()
     };
 
     // Send the POST request.
