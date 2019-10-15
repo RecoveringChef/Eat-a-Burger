@@ -3,20 +3,21 @@
 <h2>Burger Ideas to be tried!</h2>
 
 <ul>
-  {{#each Burgers}}
-    {{#unless devoured}}
-      {{> burgers/eatMe devoured=true}}
-    {{/unless}}
+  {{#each burgs}}
+  {{#unless devoured}}
+  {{> burgs/eatMe devoured=true}}
+  {{/unless}}
   {{/each}}
-</ul>
+</ul> 
+
 
 <h2>Burgers tested out</h2>
 
 <ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/eatMe devoured=false}}
-    {{/if}}
+  {{#each burgs}}
+  {{#if devoured}}
+  {{> burgs/eatMe devoured=false}}
+  {{/if}}
   {{/each}}
 </ul>
 
@@ -24,15 +25,10 @@
 <form class="create-form">
 
   <div class="form-group">
-    <label for="ca">Burg Name:</label>
-    <input type="text" id="ca" name="name">
+    <label for="bg">Burg Name:</label>
+    <input type="text" id="bg" name="name">
   </div>
 
-  <div class="form-group">
-    <label for="devoured">Tested?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Try it!<br>
-    <input type="radio" name="devoured" value="0"> To test
-  </div>
 
   <button type="submit">Add Burg</button>
 </form>

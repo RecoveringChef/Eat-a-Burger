@@ -65,6 +65,7 @@ var orm = {
   },
   // An example of objColVals would be {name: Double Triple, devooured: true}
   update: function(table, objColVals, condition, cb) {
+    console.log("ORM",objColVals);
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
