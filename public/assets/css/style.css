@@ -1,7 +1,18 @@
+
+body, html {
+  background-color: rgba(238, 238, 238, 0.81);
+  background-image: url("../img/rsz_scooby_doo_04.png");
+  background-size: cover;
+  background-blend-mode: color;
+
+}
+
+
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+ 
 }
 
 .label {
